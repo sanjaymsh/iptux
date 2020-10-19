@@ -17,12 +17,27 @@ matrix:
   - os: osx
     compiler: clang
   - os: linux
+    arch: amd64
     compiler: gcc
     env: TARGET=travis-linux
   - os: linux
+    arch: amd64
     compiler: clang
     env: TARGET=travis-linux
   - os: linux
+    arch: amd64
+    compiler: gcc
+    env: TARGET=travis-linux-codecov
+  - os: linux
+    arch: ppc64le
+    compiler: gcc
+    env: TARGET=travis-linux
+  - os: linux
+    arch: ppc64le
+    compiler: clang
+    env: TARGET=travis-linux
+  - os: linux
+    arch: ppc64le
     compiler: gcc
     env: TARGET=travis-linux-codecov
   fast_finish: true
